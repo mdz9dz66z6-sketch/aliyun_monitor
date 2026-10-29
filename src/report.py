@@ -323,13 +323,13 @@ def main():
             if status == "NotFound": run_icon = "❓"
 
             user_report = (
-                f"   👤 {sanitize_markdown(user_name)} ({spec})\n"
-                f"   🖥️ 状态: {run_icon} {status}\n"
-                f"   🌐 IP: {ip}\n"
-                f"   📉 流量: {traffic_str}\n"
-                f"   💰 账单: {bill_str}*\n"
-                f"   💳 余额: {balance_str}\n"
-                f"   📝 评价: {status_icon}\n"
+                f"👤 {sanitize_markdown(user_name)} ({spec})\n"
+                f"🖥️ 状态: {run_icon} {status}\n"
+                f"🌐 IP: {ip}\n"
+                f"📉 流量: {traffic_str}\n"
+                f"💰 账单: {bill_str}*\n"
+                f"💳 余额: {balance_str}\n"
+                f"📝 评价: {status_icon}\n"
             )
             logger.info("用户 [%s] 日报详情:\n%s", user_name, user_report)
             report_lines.append(user_report)
