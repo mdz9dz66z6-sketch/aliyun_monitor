@@ -3,7 +3,7 @@
 # 兼容性自救援（issue #7）：本脚本依赖 bash 特性（EUID / function / read -p）且需要交互终端。
 # 若被 sh/dash 执行或经管道灌入（如 wget ... | sh），自动转存后用 bash 从真实终端重新执行，
 # 避免 dash 语法报错、以及脚本内容与交互输入抢占 stdin。
-INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/install.sh"
+INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/mdz9dz66z6-sketch/aliyun_monitor/main/install.sh"
 
 if [ -p /dev/stdin ]; then
     # 管道灌入：解释器可能已预读缓冲部分内容，重新下载完整脚本最可靠
