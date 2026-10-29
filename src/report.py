@@ -327,7 +327,7 @@ def main():
                 f"🖥️ 状态: {run_icon} {status}\n"
                 f"🌐 IP: {ip}\n"
                 f"📉 流量: {traffic_str}\n"
-                f"💰 账单: {bill_str}*\n"
+                f"💰 账单: {bill_str}\n"
                 f"💳 余额: {balance_str}\n"
                 f"📝 评价: {status_icon}\n"
             )
